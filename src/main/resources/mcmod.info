@@ -1,0 +1,16 @@
+[
+{
+  "modid": "MjSExtra",
+  "name": "Mj's Extra's",
+  "description": "Example placeholder mod.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["ExampleDude"],
+  "credits": "Sir Mjctechguy",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
