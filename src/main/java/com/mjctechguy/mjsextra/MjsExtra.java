@@ -26,7 +26,7 @@ public class MjsExtra {
     @SidedProxy(clientSide = Reference.MOD_CLIENT_PROXY_CLASS, serverSide = Reference.MOD_SERVER_PROXY_CLASS )
     public static CommonProxy proxy;
 
-    public static final ModCreativeTab creativeTab = new ModCreativeTab("Mj's Extras");
+    public static final ModCreativeTab creativeTab = new ModCreativeTab(Reference.MOD_ID);
 
     @EventHandler
     public void preInit(FMLPreInitializationEvent event) {
