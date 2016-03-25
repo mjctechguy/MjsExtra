@@ -2,8 +2,10 @@ package com.mjctechguy.mjsextra;
 
 
 
+import com.mjctechguy.mjsextra.init.ModBlocks;
 import com.mjctechguy.mjsextra.init.ModCreativeTab;
 import com.mjctechguy.mjsextra.init.ModItems;
+import com.mjctechguy.mjsextra.init.ModRecipes;
 import com.mjctechguy.mjsextra.proxy.CommonProxy;
 import com.mjctechguy.mjsextra.reference.Reference;
 
@@ -31,11 +33,14 @@ public class MjsExtra {
     @EventHandler
     public void preInit(FMLPreInitializationEvent event) {
         ModItems.LoadItems();
+        ModBlocks.LoadBlocks();
     }
 
     @EventHandler
     public void init(FMLInitializationEvent event) {
         proxy.registerItemRenders();
+        proxy.registerBlockRenders();
+        ModRecipes.ModRecipesInit();
     }
 
     @EventHandler
